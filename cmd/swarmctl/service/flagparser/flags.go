@@ -22,6 +22,7 @@ func AddServiceFlags(flags *pflag.FlagSet) {
 	flags.StringSlice("command", nil, "override entrypoint")
 	flags.StringSlice("args", nil, "container args")
 	flags.StringSlice("env", nil, "container env")
+	flags.Bool("privileged", false, "grant extended privileges to the container")
 	flags.Bool("tty", false, "open a tty on standard streams")
 	flags.Bool("open-stdin", false, "open standard input")
 
