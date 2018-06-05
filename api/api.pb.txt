@@ -4860,6 +4860,13 @@ file {
       type: TYPE_INT64
       json_name: "pidsLimit"
     }
+    field {
+      name: "privileged"
+      number: 26
+      label: LABEL_OPTIONAL
+      type: TYPE_BOOL
+      json_name: "privileged"
+    }
     nested_type {
       name: "LabelsEntry"
       field {
